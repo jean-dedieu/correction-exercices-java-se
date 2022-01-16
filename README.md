@@ -1,6 +1,6 @@
 # correction-exercices-java-se
 
-//Programme pour évaluer la valeur d'une voiture
+## Programme pour évaluer la valeur d'une voiture
 
 
 	     /*
@@ -10,7 +10,7 @@
 	    *Si l'année de fabrication est supérieur à 2000 et que sa marque est renault, sa valuer est estimée à 8000 euros
 	    * */
 	
-	#### Programme
+	// Programme
   
 	     int manufacturingYear = 2009;
 	     String brand = "Opel";
