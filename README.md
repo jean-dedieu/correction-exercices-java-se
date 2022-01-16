@@ -1,5 +1,22 @@
 # correction-exercices-java-se
 
+## Programme inverser les valeurs de 2 variables
+
+           public static void main(String args[]) {
+		System.out.println("Programme inverser les valeurs de 2 variables");
+		int a = 10;
+		int b = 15;
+		int temp;
+		temp = a;//ici a = 10, temp = 10;
+		a = b; //a = 15, temp = 10, b = 15
+		b = temp; //ici a = 15, temp = 10, b = 10
+		
+		System.out.println(a);
+		System.out.println(b);
+	
+		
+	    }
+	    
 ## Programme pour évaluer la valeur d'une voiture
 
 
