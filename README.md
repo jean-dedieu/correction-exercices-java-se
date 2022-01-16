@@ -34,7 +34,7 @@
 	        }	
   
   
-  //Programme distributeur d'argent
+### Programme distributeur d'argent
   
          public static void main(String args []) {
 	final String BANK_NAME = "La poste";
