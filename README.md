@@ -15,7 +15,26 @@
 		System.out.println(b);
 	
 		
-	    
+## Programme le plus grand de 3 chiffres
+
+             int a, b, c,temp,largest;
+	  
+		Scanner clavier = new Scanner(System.in);
+		
+		//have 3 values
+		System.out.println("Entrez votre première valeur");
+		a = clavier.nextInt();
+		System.out.println("Entrez votre deuxième chiffre");
+		b = clavier.nextInt();
+		System.out.println("Entrez votre 3 ème chiffre");
+		c = clavier.nextInt();
+		
+		//Compare a to be and store the largest of 2 in temporary variable
+		temp = a > b ? a:b;
+		//Compare the largest between a and b to c and store it as the largest number
+		largest = c > temp ? c:temp;
+		
+		System.out.println("The largest number is " + largest);
 	    
 ## Programme pour évaluer la valeur d'une voiture
 
