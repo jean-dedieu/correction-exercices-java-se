@@ -2,7 +2,7 @@
 
 ## Programme inverser les valeurs de 2 variables
 
-           public static void main(String args[]) {
+          
 		System.out.println("Programme inverser les valeurs de 2 variables");
 		int a = 10;
 		int b = 15;
@@ -15,7 +15,7 @@
 		System.out.println(b);
 	
 		
-	    }
+	    
 	    
 ## Programme pour évaluer la valeur d'une voiture
 
@@ -53,7 +53,7 @@
   
 ### Programme distributeur d'argent
   
-         public static void main(String args []) {
+       
 	final String BANK_NAME = "La poste";
         int accountBalance = 3000;
        int withdrawAmount;
@@ -99,6 +99,6 @@
 		 System.out.println("Action inconnue");
 	 }
 	 
-         }
+         
   
   
