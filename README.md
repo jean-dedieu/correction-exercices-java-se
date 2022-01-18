@@ -72,52 +72,49 @@
   
 ### Programme distributeur d'argent
   
-       
-	final String BANK_NAME = "La poste";
-        int accountBalance = 3000;
-       int withdrawAmount;
-        int depositAmount;
-	
-	System.out.println("Bienvenu chez " + BANK_NAME);
-	Scanner nameClient = new Scanner(System.in);
-	System.out.println("Veuillez entrer votre nom");
-	String name = nameClient.nextLine();
-	System.out.println("Bienvenue chez " + BANK_NAME +" "+ name);
-	
-	//ask the action the custommer would like to do
-	System.out.println("Voulez-vous retirer ou déposer ? "
-			+ "Pour retirer tapez 1, pour déposer tapez 2");
-	 Scanner questionAction = new Scanner(System.in);
-	 int questionActionResponse  = questionAction.nextInt();
-	
-	
-	 if(questionActionResponse == 1) {
-		 System.out.println("Combien voulez-vous retirer ?");
+       final String BANK_NAME = "La poste";
+		int accountBalance = 3000;
+		int withdrawAmount;
+		int depositAmount;
+
+		System.out.println("Bienvenu chez " + BANK_NAME);
+		Scanner clavier = new Scanner(System.in);
+		System.out.println("Veuillez entrer votre nom");
+		String name = clavier.nextLine();
+		System.out.println("Bienvenue chez " + BANK_NAME + " " + name);
+
+		// ask the action the custommer would like to do
+		System.out.println("Voulez-vous retirer ou déposer ? " + "Pour retirer tapez 1, pour déposer tapez 2");
 		
-		 Scanner askWithdrawAmount = new Scanner(System.in);
-		 withdrawAmount = askWithdrawAmount.nextInt();
-	    
-		 if (withdrawAmount <= accountBalance) {
-			 accountBalance = accountBalance - withdrawAmount;
-			 System.out.println("Veuillez prendre votre argent");
-			 System.out.println(name + " " +", Il vous reste " + accountBalance + " Sur votre compte\nAurevoir");
-		 }
-		 
-	 } else if(questionActionResponse == 2) {
-		 System.out.println("Combien voulez-vous déposer");
-		 Scanner askDepositAmount = new Scanner(System.in);
-		 depositAmount = askDepositAmount.nextInt();
-	    
-		 if (depositAmount > 0) {
-			 accountBalance = accountBalance + depositAmount;
-			 System.out.println("Votre argent a été bien déposé");
-			 System.out.println(name + " " +", Votre nouveau solde est " + accountBalance + "\nAurevoir");
-		 }
-		 
-	 } else {
-		 System.out.println("Action inconnue");
-	 }
-	 
+		int questionActionResponse = clavier.nextInt();
+
+		if (questionActionResponse == 1) {
+			System.out.println("Combien voulez-vous retirer ?");
+
+		
+			withdrawAmount = clavier.nextInt();
+
+			if (withdrawAmount <= accountBalance) {
+				accountBalance = accountBalance - withdrawAmount;
+				System.out.println("Veuillez prendre votre argent");
+				System.out.println(name + " " + ", il vous reste " + accountBalance + " Sur votre compte\nAurevoir");
+			}
+
+		} else if (questionActionResponse == 2) {
+			System.out.println("Combien voulez-vous déposer");
+			
+			depositAmount = clavier.nextInt();
+
+			if (depositAmount > 0) {
+				accountBalance = accountBalance + depositAmount;
+				System.out.println("Votre argent a été bien déposé");
+				System.out.println(name + " " + ", Votre nouveau solde est " + accountBalance + "\nAurevoir");
+			}
+
+		} else {
+			System.out.println("Action inconnue");
+			
+		}
          
   
   
