@@ -35,6 +35,32 @@
 		largest = c > temp ? c:temp;
 		
 		System.out.println("The largest number is " + largest);
+		
+		
+		
+		Version ternaire
+		
+		int a, b, c, largest, temp;  
+	    	
+	    	//object of the Scanner class 
+	    	
+	    	Scanner clavier = new Scanner(System.in);  
+	    	//reading input from the user  
+	    	System.out.println("Entrez le premier chiffre:");  
+	    	a = clavier.nextInt();  
+	    	System.out.println("Entrez le deuxième chiffre:");  
+	    	b = clavier.nextInt();  
+	    	System.out.println("Entrez le troisième chiffre:");  
+	    	c = clavier.nextInt();  
+	    	
+	    	//comparing a and b and storing the largest number in a temp variable  
+	    	temp = a > b ? a:b; 
+	    	
+	    	//comparing the temp variable with c and storing the result in the variable  
+	    	largest = c > temp ? c:temp;  
+	    	
+	    	//prints the largest number  
+	    	System.out.println("The largest number is: "+largest); 
 	    
 ## Programme pour évaluer la valeur d'une voiture
 
